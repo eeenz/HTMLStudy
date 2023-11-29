@@ -49,5 +49,83 @@
             <td>내용</td>
         </tr>
     </table>
+    <hr>
+    <!-- 표 태그 연습 -->
+    <table border="1">
+        <tr>
+            <th scope="col">제목</th>
+            <th scope="col">종류</th>
+            <th scope="col">가격</th>
+            <th scope="col">수량</th>
+            <th scope="col">비고</th>   
+        </tr>
+        <tr>
+            <th scope="row">사망 플래그</th>
+            <td>도서</td>
+            <td>50,000</td>
+            <td>300</td>
+            <td>재고없음</td>
+        </tr>
+        <tr>
+            <th scope="row">설마 죽기야 하겠어</th>
+            <td>도서</td>
+            <td>40,000</td>
+            <td>212</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <th scope="row">이번이 정말 마지막이야</th>
+            <td>도서</td>
+            <td>50,000</td>
+            <td>0</td>
+            <td>재고없음</td>
+        </tr>
+        <tr>
+            <th scope="row">곧 돌아올게 기다려</th>
+            <td>도서</td>
+            <td>40,000</td>
+            <td>30</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <th scope="row">곧 생일이라 드레스를 사주기로 했어</th>
+            <td>도서</td>
+            <td>50,000</td>
+            <td>15</td>
+            <td>-</td>
+        </tr>
+    </table>
+    <hr>
+    <!-- 행 그룹을 활용한 테이블 만들기 (thead, tbody, tfoot) -->
+    <!-- 눈이 불편한 사람들을 위하여 tfoot을 바로 thead밑으로 둔다 (thead>tfoot>tbody)-->
+    <!-- scope는 제목에만 들어감 col:아래로 row옆으로 -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th scope="col">과목</th>
+                <th scope="col">이름</th>
+                <th scope="col">점수</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th scope="row">반 평균</th>
+                <td>-</td>
+                <td>75점</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th scope="row">HTML</th>
+                <td>김은지</td>
+                <td>100점</td>
+            </tr>
+            <tr>
+                <th scope="row">CSS</th>
+                <td>안일혁</td>
+                <td>50점</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
